@@ -29,7 +29,7 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
       </CardContent>
       <CardActions>
         {
-          <Button onclick="document.location= movielink;" variant="raised" color="primary" className={classes.button}>
+          <Button href="'https://www.themoviedb.org/movie/' + movieDetails.id" variant="raised" color="primary" className={classes.button}>
             Les mer
           </Button>
         }
