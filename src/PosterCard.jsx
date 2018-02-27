@@ -25,7 +25,11 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
         <Typography component="p">{movieDetails.overview}</Typography>
       </CardContent>
       <CardActions>
-        {/* TODO */}
+        {
+          <Button variant="raised" color="primary" className={classes.button}>
+            Les mer
+          </Button>
+        }
       </CardActions>
     </Card>
   </div>
