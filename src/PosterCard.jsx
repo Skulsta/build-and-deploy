@@ -27,7 +27,7 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
       </CardContent>
       <CardActions>
         {
-          <Button variant="raised" color="primary" className={classes.button}>
+          <Button href="'https://www.themoviedb.org/movie/' + movieDetails.id" variant="raised" color="primary" className={classes.button}>
             Les mer
           </Button>
         }
