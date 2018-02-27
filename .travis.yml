@@ -1,10 +1,16 @@
 language: node_js
 node_js:
-  - '8'
+- '8'
 cache:
   directories:
   - node_modules
-script: 
-  - npm run build
-  - npm test
-  - npm run build
+script:
+- npm run build
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: skulstad-build-and-deploy-2018
+  skip_cleanup: true
+  api_key:
+    secure: GqtrMfXy1xSxVpJMbnYNuUjczYgjoT0ft+D7qcQwYjB/8IZhOJ4k/iBf6soaLVF9E3QG3cmovvw8f+tGIMri6Q7Zekf954n3MSMATj9wDqV9M+MMspn2IdqFJn2nRn5aOMjrxmTgyafg3gsNuRyVGIjy1Uq3ZxnPBUhUZb2xnILteWhMEcuuz6aTQan0ryY62Ia40zd2jQ2+5kHXiNgvLvM0Wgr/XmU81XLCEJeahGpMPYavNbogMCChsxc9ADqXjOc8D/blcFOaDtwvkcoqPP1SvYSUcRwdh7slIrJO0mvVr6CZetF+xh/hS0EOAMP3nZom1sclFldRks8mgHtXNvvkEd3T2M3Wxkos4GSkuEliGsOtvSQg0ZJX950qEHx4jvhFrrodKgCKOxST+PrkvAxVr3Nhiot0u9wNUlfZDPXNZ/qrnI5S3gHR4SBfvc6eeiHyLO5KIql5i/UgwDFbvkuDKxIjpADUDi85l415hzgzcSEiE8F53mkaWhGkh2TaoqSXaa/URqtzvTVbxVgGTL+Ivaazz41ax/bfWUxvmnV/20pbNoVwvgEixAlywqPoGzKXb3iivKuG2i0SyDFYwQvktcVIUTQi/9SsLqVrtXLR2N9Pn1Kpxy2a997dSLGj5aGc09yXBNR8xFh2HKf/ueN/ySps6cCPQVmfWY6rfvA=
