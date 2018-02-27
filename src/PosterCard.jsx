@@ -5,6 +5,8 @@ import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 
+var movielink = "https://www.themoviedb.org/movie/" + movieDetails.id;
+
 const styles = {
   card: {
     maxWidth: 500,
@@ -27,7 +29,7 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
       </CardContent>
       <CardActions>
         {
-          <Button href="'https://www.themoviedb.org/movie/' + movieDetails.id" variant="raised" color="primary" className={classes.button}>
+          <Button href="movielink" variant="raised" color="primary" className={classes.button}>
             Les mer
           </Button>
         }
